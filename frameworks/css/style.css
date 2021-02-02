@@ -1,66 +1,66 @@
-/* HTML Start */
-
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Scroll behaviour */
 }
-
-/* HTML End */
-
-/* Body Start */
 
 body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;    /* Remove space around elements */
+    padding: 0;  /* Remove space between elements */
+    font-family: Arial, Helvetica, sans-serif; /* Font for Navigation elements */
+    width:100%;  /* Width of the element */
+    height:100%  /* Height of the element */
 }
 
-/* Body End */
-
-/* Nav Start */
+/* Navigation start */
 
 nav{
-    width: 100%;
-    background: 	#375e6b;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
+    width: 100%; /* Width of the Navigation element */
+    background: 	#375e6b; /* Background color of the Navigation element */
+    overflow: hidden;   /* Overflow clipped and content hidden */
+    top: 0; /* Vertical position of an element */
     
 }
 
 ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    padding: 0;              /* Remove space between the element */
+    margin: 0;               /* Remove space around elements */
+    list-style: none;       /*  No list-item marker in a list */
 }
 li{
-    float: left;
+    float: left;            /* To float the navigation elements to left */
 }
 a{
-    padding: 20px;
-    width: 100px;
-    display: block;
-    text-decoration: none;
-    color: rgb(239, 253, 253);
-    text-transform: uppercase;
-    font-weight: bold;
+    padding: 20px;          /* Add space between the element */
+    width: 100px;            /* Width of the element */
+    display: block;         /* Display behaviour of <a> element */
+    text-decoration: none;  /* Removes underline of <a> element */
+    color: rgb(239, 253, 253); /* Color of the Navigation Text */
+    text-transform: uppercase;      /* Change font from lowercase to uppercase */
+    font-weight: bold;     /* Make font bold */
 }
 
-/* Nav End */
+/* Navigation End */
 
-/* Div Start */
+/* Scene 1 style start */
 
-#forest {
-    background-image: url(../images/background.jpg);
-    background-repeat: no-repeat;
-
-
+#forest{
+    width: 100%;            /* Width of the Image */
+    height: 650px;          /* Height of the Image */
+    background-image: url('../images/background.jpg');       /* Image Background */
+    background-attachment: fixed;                 /* image will not scroll with the page */
+    background-position: top center;             /* image position in center of the page */
+    background-size: cover;                      /* image size to cover the entire page */
+    background-repeat: no-repeat;          /* image only shown once */
 }
 
-/* First group of animals */
 
-.animal .deer1 {
-   height: 100px; 
-   width: 120px;
+#forest marquee{                  /* To Call elements in forest div under Marquee */
+    height: 100%;                 /* Height of the Image */
+    position: fixed;                  /* Stays in the same place even if the page is scrolled */
+    bottom: -560px;              /* To set image to bottom */
 }
 
-/* Div End */
+#forest marquee img{            /*  Style image  */
+    height: 150px;            /* Height of the GIFF */
+}
+
+/* Scene 1 style End */
