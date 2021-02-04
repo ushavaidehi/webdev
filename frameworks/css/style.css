@@ -73,27 +73,22 @@ a{
 /* Scene 2 style start */
 
 #road{
-    width: 100%;           /*WidthoftheImage*/
-    height: 800px;         /*HeightoftheImage*/
-    background-image: url('../images/background\ with\ road.jpg'); /*ImageBackground*/
-    background-attachment: local; /*imagewillnotscrollwiththepage*/
-    background-position: top center;  /*imagepositionincenterofthepage*/
-    background-size: cover; /*imagesizetocovertheentirepage*/
-    background-repeat: no-repeat; /*imageonlyshownonce*/
-    display: inline-block;  /*Displayelementin-line*/
-    position: relative;  /*Positionnormal*/
-    transform: scaleX(-10); /*To rotate the image*/
-    -webkit-transform: scaleX(-10);
-    -moz-transform: scaleX(-1);
-    -ms-transform: scaleX(-1);
-    -o-transform: scaleX(-1);  
-    -webkit-transform: scaleX(-1);
+    width: 100%;            /* Width of the Image */
+    height: 800px;          /* Height of the Image */
+    background-image: url('../images/background\ with\ road.jpg');       /* Image Background */
+    background-attachment: local;                 /* image will not scroll with the page */
+    background-position: top center;             /* image position in center of the page */
+    background-size: cover;                      /* image size to cover the entire page */
+    background-repeat: no-repeat;          /* image only shown once */
+    display:inline-block;
+    position: relative;
 }
 
-#road marquee{                  /* To Call elements in forest div under Marquee */
-    height: 100%;                 /* Height of the Image */
-    position: absolute;                  /* Positioned to the id forest*/
-    bottom: -450px;              /* To set image to bottom */   
+#road marquee{
+    /*ToCallelementsinforestdivunderMarquee*/height: 100%;
+    /*HeightoftheImage*/position: absolute;
+    /*Positionedtotheidforest*/bottom: -450px;
+    transform: scaleX(-1);
 }
 
 #road marquee img{            /*  Style image  */
@@ -101,9 +96,6 @@ a{
 }
 
 /* Scene 2 style end */
-
-
-
 
 /* Scene 3 style start*/
 
@@ -115,6 +107,146 @@ a{
     background-position: top center;             /* image position in center of the page */
     background-size: cover;                      /* image size to cover the entire page */
     background-repeat: no-repeat;          /* image only shown once */
-    
+    display:inline-block;  /* Display image inline */
+    position: relative;  /* position of the image */
+}
+#vehilce marquee{
+    height: 100%;   /* height of the image */
+    position: absolute;    /* position of the image to vehilce */
+    bottom: -510px;       /*  placing image to the bottom of page*/
+    transform: scaleX(-1);   /* to reverse the direction of image */
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+}
+
+#vehilce marquee img{
+    height: 390px;   /* Height of the Image*/
+}
+
+/* baby deer */
+#vehilce #wild{
+    position: absolute;  /* Positioning to the vehicle folder*/
+    bottom: 190px;  /* placing image to the bottom of the page*/
+    right: 200px;  /* moving the image to right side of the page */
+}
+
+#vehilce #wild  img{
+    height: 110px;  /* original height of the image */
+}
+
+/* falling tree*/
+
+#vehilce #nature{
+    position: absolute;  /* Position of the image */
+    bottom: 27px;    /* placing image to bottom */
+    right: 700px;     /*  Placing image to rightside of the page */
+    animation-name: fall; /* animation name for keyframes*/
+    animation-duration: 25s; /*  animation duration*/
+    animation-delay: 9s;   /*  delay to start animation */
+    animation-fill-mode: forwards; /* To make the change in animation stable */
+}
+
+@keyframes fall{
+    /*  to move tree */
+    0%{ transform:translate(0%) ; -webkit-transform:translate(0%) ; -moz-transform:translate(0%) ; -ms-transform:translate(0%) ; -o-transform:translate(0%) ; }
+   /*  to make tree fall leftside */
+    70%{ transform:translate(10px,-20px) rotate(-90deg)  ; -webkit-transform:translate(10px,-20px) rotate(-90deg)  ; -moz-transform:translate(10px,-20px) rotate(-90deg)  ; -ms-transform:translate(10px,-20px) rotate(-90deg)  ; -o-transform:translate(10px,-20px) rotate(-90deg)  ; }
+    /* fall leftside */
+    100%{ transform:translate(10px,-20px) rotate(-90deg)  ; -webkit-transform:translate(10px,-20px) rotate(-90deg)  ; -moz-transform:translate(10px,-20px) rotate(-90deg)  ; -ms-transform:translate(10px,-20px) rotate(-90deg)  ; -o-transform:translate(10px,-20px) rotate(-90deg)  ; }
+}
+
+
+#vehilce #nature img{
+    height: 300px;   /* Height of the tree */
+}
+
+/* stable tree */
+#vehilce #nature2{
+    position: absolute;    /* Position of the image */
+    bottom: 130px;   /* placing image to bottom */
+    right: 900px;  /* placing image to rightside */
+}
+#vehilce #nature2 img{
+    height: 300px;  /* height of the image */
+}
+
+/*  half cut tree*/
+
+#vehilce #nature1{
+    position: absolute;  /* Position of the image */
+    bottom: 80px; /* placing image to bottom */
+    right: 900px;  /* placing image to rightside */
 
 }
+#vehilce #nature1 img{
+    height: 30px;  /* height of the image */
+
+}
+
+/* bird sitting on tree start*/
+
+#vehilce #birds{
+    position: absolute; /* Position of the image */
+    bottom: 300px;    /* placing image to bottom */
+    right: 990px;   /* placing image to rightside */
+
+}
+#vehilce #birds img{
+    height: 30px;   /* height of the image */
+}
+
+/* bird sitting on tree end */
+
+/* bird 1 flying start*/
+
+#vehilce #bird2{
+    position: absolute;    /* Position of the image */
+    bottom: 200px;  /* placing image to bottom */
+    right: 700px;    /* placing image to rightside */
+    animation-name: fly;  /* animation name */
+    animation-duration: 29s;  /* animation duration */
+    animation-delay: 9s; /* time to start the animation*/
+    animation-fill-mode: forwards;  /* to make the change stable */
+
+}
+#vehilce #bird2 img{
+    height: 70px;   /* Height of the image */
+}
+
+@keyframes fly{
+    /*  start position of bird */
+    0% {
+        transform: translatex(0px) translatey(0px)    ;
+        -webkit-transform: translatex(0px) translatey(0px)    ;
+        -moz-transform: translatex(0px) translatey(0px)    ;
+        -ms-transform: translatex(0px) translatey(0px)    ;
+        -o-transform: translatex(0px) translatey(0px)    ;
+}
+ /*  angle of movement of bird */
+    100% {
+        transform: translatex(500px) translatey(-500px);
+        -webkit-transform: translatex(500px) translatey(-500px);
+        -moz-transform: translatex(500px) translatey(-500px);
+        -ms-transform: translatex(500px) translatey(-500px);
+        -o-transform: translatex(500px) translatey(-500px);
+}
+}
+
+/* Scene 3 style end */
+
+
+
+/* Scene 4 style start */
+
+#city{
+    width: 100%;            /* Width of the Image */
+    height: 800px;          /* Height of the Image */
+    background-image: url('../images/city\ background.jpg');       /* Image Background */
+    background-attachment: local;                 /* image will not scroll with the page */
+    background-position: top center;             /* image position in center of the page */
+    background-size: cover;                      /* image size to cover the entire page */
+    background-repeat: no-repeat;          /* image only shown once */
+}
+
