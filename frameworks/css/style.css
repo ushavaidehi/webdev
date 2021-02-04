@@ -44,19 +44,24 @@ a{
 
 #forest{
     width: 100%;            /* Width of the Image */
-    height: 650px;          /* Height of the Image */
+    height: 800px;          /* Height of the Image */
     background-image: url('../images/background.jpg');       /* Image Background */
-    background-attachment: fixed;                 /* image will not scroll with the page */
+    background-attachment: local;                 /* image will not scroll with the page */
     background-position: top center;             /* image position in center of the page */
     background-size: cover;                      /* image size to cover the entire page */
     background-repeat: no-repeat;          /* image only shown once */
+    position: relative;       /* Positioned normal */
+    display: inline-block;     /* Display element in-line*/
 }
 
 
 #forest marquee{                  /* To Call elements in forest div under Marquee */
     height: 100%;                 /* Height of the Image */
-    position: fixed;                  /* Stays in the same place even if the page is scrolled */
-    bottom: -560px;              /* To set image to bottom */
+    position: absolute;                  /* Positioned to the id forest*/
+    bottom: -610px;              /* To set image to bottom */
+    
+    
+    
 }
 
 #forest marquee img{            /*  Style image  */
@@ -64,3 +69,52 @@ a{
 }
 
 /* Scene 1 style End */
+
+/* Scene 2 style start */
+
+#road{
+    width: 100%;           /*WidthoftheImage*/
+    height: 800px;         /*HeightoftheImage*/
+    background-image: url('../images/background\ with\ road.jpg'); /*ImageBackground*/
+    background-attachment: local; /*imagewillnotscrollwiththepage*/
+    background-position: top center;  /*imagepositionincenterofthepage*/
+    background-size: cover; /*imagesizetocovertheentirepage*/
+    background-repeat: no-repeat; /*imageonlyshownonce*/
+    display: inline-block;  /*Displayelementin-line*/
+    position: relative;  /*Positionnormal*/
+    transform: scaleX(-10); /*To rotate the image*/
+    -webkit-transform: scaleX(-10);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);  
+    -webkit-transform: scaleX(-1);
+}
+
+#road marquee{                  /* To Call elements in forest div under Marquee */
+    height: 100%;                 /* Height of the Image */
+    position: absolute;                  /* Positioned to the id forest*/
+    bottom: -450px;              /* To set image to bottom */   
+}
+
+#road marquee img{            /*  Style image  */
+    height: 390px;            /* Height of the GIFF */
+}
+
+/* Scene 2 style end */
+
+
+
+
+/* Scene 3 style start*/
+
+#vehilce{
+    width: 100%;            /* Width of the Image */
+    height: 800px;          /* Height of the Image */
+    background-image: url('../images/background.jpg');       /* Image Background */
+    background-attachment: local;                 /* image will not scroll with the page */
+    background-position: top center;             /* image position in center of the page */
+    background-size: cover;                      /* image size to cover the entire page */
+    background-repeat: no-repeat;          /* image only shown once */
+    
+
+}
