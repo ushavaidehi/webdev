@@ -248,5 +248,52 @@ a{
     background-position: top center;             /* image position in center of the page */
     background-size: cover;                      /* image size to cover the entire page */
     background-repeat: no-repeat;          /* image only shown once */
+    position: relative;       /* Positioned normal */
+    display: inline-block;     /* Display element in-line*/
 }
 
+#city marquee{                  /* To Call elements in forest div under Marquee */
+    height: 100%;                 /* Height of the Image */
+    position: absolute;                  /* Positioned to the id forest*/
+    bottom: -610px;              /* To set image to bottom */
+    
+    
+    
+}
+
+#city marquee img{            /*  Style image  */
+    height: 150px;            /* Height of the GIFF */
+}
+
+#city .birdfly {            /*  Style image  */
+
+    position: absolute;                  /* Positioned to the id forest*/
+    bottom: 260px;              /* To set image to bottom */
+    animation-name: flight;  /* animation name */
+    animation-duration: 12s;  /* animation duration */
+    animation-delay: 0s; /* time to start the animation*/
+    animation-fill-mode: forwards;  /* to make the change stable */
+}
+
+@keyframes flight{
+    /*  start position of bird */
+    0% {
+        transform: translatex(0px) translatey(0px)    ;
+        -webkit-transform: translatex(0px) translatey(0px)    ;
+        -moz-transform: translatex(0px) translatey(0px)    ;
+        -ms-transform: translatex(0px) translatey(0px)    ;
+        -o-transform: translatex(0px) translatey(0px)    ;
+}
+ /*  angle of movement of bird */
+    100% {
+    transform: translatex(700px) translatey(-350px);
+    -webkit-transform: translatex(700px) translatey(-350px);
+    -moz-transform: translatex(700px) translatey(-350px);
+    -ms-transform: translatex(700px) translatey(-350px);
+    -o-transform: translatex(700px) translatey(-350px);
+}   
+ 
+}
+#city .birdfly img{            /*  Style image  */
+    height: 60px;            /* Height of the GIFF */
+}
