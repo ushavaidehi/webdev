@@ -40,7 +40,105 @@ a{
 
 /* Navigation End */
 
+/* Home start */
+
+/* Intro container */
+#intro-container{
+    width: 100%;            /* Width of the Image */
+    height: 750px;          /* Height of the Image */
+    background:#94e7e7; /* back ground color */
+    position: relative;       /* Positioned normal */
+    display: inline-block;     /* Display element in-line*/
+    text-align: center; /* To make entire div in center */
+    
+}
+/* Heading start */
+
+#intro-container h1{
+    font-size: 36px;  /* font size */
+    color: rgb(48, 48, 48); /* color of header */
+    margin: 60px; /* sets margin for heading */
+    font-family: Arial, Helvetica, sans-serif; /* font family */
+} 
+
+/* paragrah start */
+
+#intro-container p{
+    font-size: 18px; /* font sizw */
+    width: 850px; /* width of the text */
+    color: rgb(63, 63, 63); /* color of text */
+    margin: auto; /* margin for container*/
+    text-align: justify; /* alignment of the text */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* font family */
+}
+
+/* Image start */
+
+#intro-container img{
+    height: 400px;     /* height of image */
+}
+
+#intro-container .intro-image{
+    right: 500px;  /* right side */
+    bottom: 20px;  /* position image */
+    position: absolute; /* position image */
+}
+
+/* link start*/
+
+#intro-container .learn{
+   margin: 40px auto 0;  /* margin the element */
+   
+}
+
+#intro-container .learn a{
+    width: 100px;              /* width of the button*/
+    text-decoration: none;     /* to remove decoration of the link*/
+    text-transform: initial;  /* to make font look same as initial */
+    display: inline-block;   /* to set the direction of the element*/
+    margin: 12px;   /* margin */
+    padding: 8px;   /* padding */
+    color: #375e6b; /* color */
+    border: .5px solid #375e6b; /* border of link button */
+    position: relative; /* position of the element*/
+    z-index: 1; /* order of the element -front*/
+    cursor: pointer; /* pointer */
+}
+
+/* span code for hover */
+
+#intro-container .learn a span{
+    width: 0;   /* width of the button*/
+    height: 100%; /* height of the button*/
+    position: absolute; /* position */
+    top: 0;  /* alignment */
+    left: 0; /* alignment */
+    background:white; /* background color */
+    z-index: -1; /* order of the element - back*/
+    transition: 0.5s; /*transition time*/
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#intro-container .learn a:hover span{
+    width: 100%; /* width of hover*/
+
+}
+/* Home page end */
+
 /* Scene 1 style start */
+
+/* Scene 1 text css */
+
+#forest .text1{
+    height: 370px;
+    width: 800px;
+    margin: 50px;
+    padding: 10px;
+}
+
+/* Scene 1 animals running css */
 
 #forest{
     width: 100%;            /* Width of the Image */
@@ -145,7 +243,7 @@ a{
     animation-name: fall; /* animation name for keyframes*/
     animation-duration: 25s; /*  animation duration*/
     animation-delay: 9s;   /*  delay to start animation */
-    animation-fill-mode: forwards; /* To make the change in animation stable */
+    
 }
 
 @keyframes fall{
@@ -253,9 +351,9 @@ a{
 }
 
 #city marquee{                  /* To Call elements in forest div under Marquee */
-    height: 100%;                 /* Height of the Image */
+                   
     position: absolute;                  /* Positioned to the id forest*/
-    bottom: -610px;              /* To set image to bottom */
+    top: 610px;              /* To set image to bottom */
     
     
     
@@ -297,3 +395,4 @@ a{
 #city .birdfly img{            /*  Style image  */
     height: 60px;            /* Height of the GIFF */
 }
+
