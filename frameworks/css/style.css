@@ -98,8 +98,8 @@ a{
     display: inline-block;   /* to set the direction of the element*/
     margin: 12px;   /* margin */
     padding: 8px;   /* padding */
-    color: #375e6b; /* color */
-    border: .5px solid #375e6b; /* border of link button */
+    color: white; /* color */
+    background-color:#375e6b;
     position: relative; /* position of the element*/
     z-index: 1; /* order of the element -front*/
     cursor: pointer; /* pointer */
@@ -113,7 +113,7 @@ a{
     position: absolute; /* position */
     top: 0;  /* alignment */
     left: 0; /* alignment */
-    background:white; /* background color */
+    background:rgb(42, 168, 147); /* background color */
     z-index: -1; /* order of the element - back*/
     transition: 0.5s; /*transition time*/
     -webkit-transition: 0.5s;
@@ -138,6 +138,66 @@ a{
     padding: 10px;
 }
 
+
+
+/* forest text */
+
+
+#forest .forest-text-cont{
+    width: 600px;
+    margin-top: 80px;
+    margin-left: 60px;
+    text-align: justify;
+    position: relative;
+
+}
+#forest p{
+    color: rgb(71, 71, 71);
+}
+
+#forest .forest-text-cont a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 100px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 100px;              /* width of the button*/
+    text-decoration: none;     /* to remove decoration of the link*/
+    text-transform: initial;  /* to make font look same as initial */
+    display: inline-block;   /* to set the direction of the element*/
+    margin: 12px;   /* margin */
+    padding: 8px;   /* padding */
+    color: white; /* color */
+    background-color:#375e6b;
+    position: relative; /* position of the element*/
+    z-index: 1; /* order of the element -front*/
+    cursor: pointer; /* pointer */
+    text-align: center;
+}
+
+#forest .forest-text-cont a span{
+    width: 0;   /* width of the button*/
+    height: 100%; /* height of the button*/
+    position: absolute; /* position */
+    top: 0;  /* alignment */
+    left: 0; /* alignment */
+    background:rgb(42, 168, 147); /* background color */
+    z-index: -1; /* order of the element - back*/
+    transition: 0.5s; /*transition time*/
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#forest .forest-text-cont a:hover span{
+    width: 100%; /* width of hover*/
+
+}
+
 /* Scene 1 animals running css */
 
 #forest{
@@ -151,7 +211,6 @@ a{
     position: relative;       /* Positioned normal */
     display: inline-block;     /* Display element in-line*/
 }
-
 
 #forest marquee{                  /* To Call elements in forest div under Marquee */
     height: 100%;                 /* Height of the Image */
