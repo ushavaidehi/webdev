@@ -229,6 +229,65 @@ a{
 
 /* Scene 2 style start */
 
+
+/* Road text */
+
+
+#road .road-text-cont{
+    width: 600px;
+    margin-top: 80px;
+    margin-left: 760px;
+    text-align: justify;
+    position: relative;
+
+}
+#road p{
+    color: rgb(219, 219, 219);
+}
+
+#road .road-text-cont a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 100px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 100px;              /* width of the button*/
+    text-decoration: none;     /* to remove decoration of the link*/
+    text-transform: initial;  /* to make font look same as initial */
+    display: inline-block;   /* to set the direction of the element*/
+    margin: 12px;   /* margin */
+    padding: 8px;   /* padding */
+    color: white; /* color */
+    background-color: #3d4770;
+    position: relative; /* position of the element*/
+    z-index: 1; /* order of the element -front*/
+    cursor: pointer; /* pointer */
+    text-align: center;
+}
+
+#road .road-text-cont a span{
+    width: 0;   /* width of the button*/
+    height: 100%; /* height of the button*/
+    position: absolute; /* position */
+    top: 0;  /* alignment */
+    left: 0; /* alignment */
+    background:rgb(42, 168, 147); /* background color */
+    z-index: -1; /* order of the element - back*/
+    transition: 0.5s; /*transition time*/
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#road .road-text-cont a:hover span{
+    width: 100%; /* width of hover*/
+
+}
+
 #road{
     width: 100%;            /* Width of the Image */
     height: 800px;          /* Height of the Image */
@@ -255,6 +314,63 @@ a{
 /* Scene 2 style end */
 
 /* Scene 3 style start*/
+
+/* vehilce text */
+
+
+#vehilce .veh-text-cont{
+    width: 600px;
+    margin-top: 80px;
+    margin-left: 60px;
+    text-align: justify;
+    position: relative;
+
+}
+#vehilce p{
+    color: rgb(71, 71, 71);
+}
+
+#vehilce .veh-text-cont a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 100px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 100px;              /* width of the button*/
+    text-decoration: none;     /* to remove decoration of the link*/
+    text-transform: initial;  /* to make font look same as initial */
+    display: inline-block;   /* to set the direction of the element*/
+    margin: 12px;   /* margin */
+    padding: 8px;   /* padding */
+    color: white; /* color */
+    background-color:#375e6b;
+    position: relative; /* position of the element*/
+    z-index: 1; /* order of the element -front*/
+    cursor: pointer; /* pointer */
+    text-align: center;
+}
+
+#vehilce .veh-text-cont a span{
+    width: 0;   /* width of the button*/
+    height: 100%; /* height of the button*/
+    position: absolute; /* position */
+    top: 0;  /* alignment */
+    left: 0; /* alignment */
+    background:rgb(42, 168, 147); /* background color */
+    z-index: -1; /* order of the element - back*/
+    transition: 0.5s; /*transition time*/
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#vehilce .veh-text-cont a:hover span{
+    width: 100%; /* width of hover*/
+}
 
 #vehilce{
     width: 100%;            /* Width of the Image */
@@ -397,6 +513,63 @@ a{
 
 /* Scene 4 style start */
 
+/* vehilce text */
+
+
+#city .city-text-cont{
+    width: 600px;
+    margin-top: 80px;
+    margin-left: 60px;
+    text-align: justify;
+    position: relative;
+
+}
+#city .city-text-cont p{
+    color: rgb(71, 71, 71);
+}
+
+#city .city-text-cont a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 100px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 100px;              /* width of the button*/
+    text-decoration: none;     /* to remove decoration of the link*/
+    text-transform: initial;  /* to make font look same as initial */
+    display: inline-block;   /* to set the direction of the element*/
+    margin: 12px;   /* margin */
+    padding: 8px;   /* padding */
+    color: white; /* color */
+    background-color:#375e6b;
+    position: relative; /* position of the element*/
+    z-index: 1; /* order of the element -front*/
+    cursor: pointer; /* pointer */
+    text-align: center;
+}
+
+#city .city-text-cont a span{
+    width: 0;   /* width of the button*/
+    height: 100%; /* height of the button*/
+    position: absolute; /* position */
+    top: 0;  /* alignment */
+    left: 0; /* alignment */
+    background:rgb(42, 168, 147); /* background color */
+    z-index: -1; /* order of the element - back*/
+    transition: 0.5s; /*transition time*/
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#city .city-text-cont a:hover span{
+    width: 100%; /* width of hover*/
+}
+
 #city{
     width: 100%;            /* Width of the Image */
     height: 800px;          /* Height of the Image */
@@ -455,3 +628,60 @@ a{
     height: 60px;            /* Height of the GIFF */
 }
 
+/* Footer start */
+
+.footer{
+    background: #375e6b;
+    color: rgb(202, 202, 202);
+    height: 120px;
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+}
+.footer .foot-content{
+    height: 140px;
+}
+
+.footer .foot-content nav{
+    width: 100%; /* Width of the Navigation element */
+    background: 	#375e6b; /* Background color of the Navigation element */
+    overflow: hidden;   /* Overflow clipped and content hidden */
+    top: 10px; /* Vertical position of an element */
+    
+}
+
+.footer .foot-content ul{
+    padding: 0;              /* Remove space between the element */
+    margin: 0;               /* Remove space around elements */
+    
+}
+.footer .foot-content ul li{
+    list-style: none;       /*  No list-item marker in a list */
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer .foot-content a{
+    padding: 20px;          /* Add space between the element */
+    text-decoration: none;  /* Removes underline of <a> element */
+    color: rgb(239, 253, 253); /* Color of the Navigation Text */
+    text-transform: initial;      /* Change font to initial */
+    font-size: 15px;
+}
+
+
+.footer .foot-bottom{
+    background: black;
+    color: rgb(202, 202, 202);
+    height: 40px;
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    position: absolute;
+    padding-top: 15px;
+    bottom: 0px;
+    left: 0px;
+
+}
+
+/* footer End */
