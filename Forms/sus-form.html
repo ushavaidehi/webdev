@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Details</title>
+        <link rel="stylesheet" href="./css/style-sus.css">
+    </head>
+    <body>
+     <!---Heading -->
+    <h2 class="heading">Registration Details</h2>
+    
+    <div class="container">
+        <form action="/action_page.php" class="contact">
+            <!---FIRST NAME -->
+            <label for="fname">First Name</label>
+            <input type="text" id="name" name="firstname" placeholder="All Caps">
+             <!---LAST NAME -->
+            <label for="lname">Last Name</label>
+            <input type="text" id="name" name="lastname" placeholder="All Caps">
+             <!---GENDER-->
+
+             <fieldset>
+            <legend class="gender">Select your Gender</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="transgender" name="gender" value="transgender">
+            <label for="transgender">Transgender</label><br>
+            <input type="radio" id="no" name="gender" value="no">
+            <label for="no">Prefer not to disclose</label>
+            </fieldset>
+
+             <!---CONTACT NO -->
+             <label for="phone">Contact</label>
+             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{10}" placeholder="## ##########" required>
+              <!---email id -->
+              <label for="email">Email Id</label>
+              <input type="text" id="email" name="email" placeholder="xxxx@gmail.com" required>
+             <!---COUNTRY NAME -->
+            <label for="Country">Country</label>
+            <select name="country" id="country">
+                <option value="Please choose" disabled selected hidden>Please choose</option>
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="India">India</option>
+                <option value="UK">UK</option>
+            </select>
+            
+            <!---PRODUCT DETAILS -->
+            <label for="Product Details">Product Details</label>
+            <select name="product" id="product">
+                <option value="Please choose" disabled selected hidden>Please choose</option>
+                <option value="Air Conditioner">Air Conditioner</option>
+                <option value="Television">Television</option>
+                <option value="Gyser">Gyser</option>
+                <option value="Refridgerator">Refridgerator</option>
+                <option value="Washing Machine">Washing machine</option>
+            </select>
+
+             <!---DATE OF PURCHASE -->
+            <label for="date">Date of purchase</label>
+            <input type="date" id="date" name="date" placeholder="Date of Purchase"><br>
+            <!---MESSAGE SUBJECT -->
+            <label for="Message Subject">Message Subject</label>
+            <select name="subject" id="subject">
+                <option value="Please choose" disabled selected hidden>Please choose</option>
+                <option value="Request for Demo">Request for Demo</option>
+                <option value="Faulty Product">Faulty Product</option>
+                <option value="Request for service">Request for service</option>
+                <option value="Request for maintainence">Request for maintainence</option>
+                <option value="Complaints regarding service/maintainence">Complaints regarding service/maintainence</option>
+                <option value="Other Issue">Other Issue</option>
+            </select>
+            <!---MESSAGE -->
+            <label for="Message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="6" placeholder="Write in detail.."></textarea>
+             <!---Submit button -->
+            <input type="submit" value="submit">
+            
+        </form>
+
+    </div>
+
+    </body>
+</html>
