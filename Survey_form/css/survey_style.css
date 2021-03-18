@@ -1,1 +1,173 @@
-dsv./
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* total width and height are included along with padding*/
+}
+
+/* Body style */
+
+body{
+    background-color: #fdfef0;
+} 
+
+/* Navigation Start */
+
+nav{
+    height: 40px;
+    width: 100%;
+    background: #154660;
+}
+
+nav #comp{
+    float: left;
+    margin: 0 auto;
+}
+
+nav #comp h2{
+    font-size:  15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fdfef0;
+    margin: 10px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 25px;
+    margin-top: 10px;
+    list-style: none;
+    position: relative;
+    
+}
+
+nav ul li{
+    float: left;
+    display: block;
+    background: #154660;
+}
+
+nav ul li a{
+    color: #fdfef0;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+     padding: 0px 15px;
+     
+}
+
+nav ul li a:hover{
+    background: #fdfef0;
+    color: #154660;
+    border-radius: 5px;
+    padding: 5px 20px; 
+
+}
+
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    
+
+}
+
+nav ul ul{
+    position: absolute;
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 120px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul ul li a{
+    line-height: 40px;
+}
+
+nav ul ul li a:hover{
+    color: #154660;
+    box-shadow: none;
+}
+
+/* Form Start */
+
+#main{
+    color: #154660;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+#main h1{
+    font-size: 24px;
+    padding-top: 30px;  
+}
+
+#main p{
+    font-size: 16px;
+    padding-top: 5px; 
+    font-style: italic; 
+}
+
+/* Form */
+
+#survey-form{
+    background: #154660;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 700px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1)  /* box shadow for 3 sides */
+}
+
+
+form{
+    margin: 0 auto;
+    width: 600px;
+    color: #fdfef0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-top: 30px;
+}
+
+
+input[type=text], [type=tel], select, textarea{
+    width: 100%; /* width*/
+    padding: 13px; /* padding*/
+    border: 1px solid #ccc; /* border color*/
+    box-sizing:border-box; /* total height and width */
+    margin-top: 6px;  /* top margin*/
+    margin-bottom: 10px;   /* bottom margin*/
+    resize: none;
+}
+
+input[type=submit] {  /* to call submit button*/
+  background-color: #fdfef0;  /* background color*/
+  color: #154660;  /* font color*/
+  padding: 8px 10px;  /* padding*/
+  border: none;  /* border for box */
+  border-radius: 5px;  /* for curved edges of the box*/
+  cursor:pointer;  /* cursor pointer*/
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+input[type=submit]:hover{  /* submit button hover*/
+    background-color: #6dd5ed;  /* background color*/
+  color: #154660;   /* font color */
+} 
+
+
+
+
+

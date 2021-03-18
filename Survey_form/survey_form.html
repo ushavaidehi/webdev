@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="./css/survey_style.css">
+    </head>
+    <body>
+
+<!-- Navigation -->
+            <nav>
+
+<!-- Logo -->
+
+            <div id="comp">
+                <h2>Survey Form</h2>
+            </div>
+
+<!-- Menu  -->
+
+            <ul>
+                <li><a href="#">Menu</a>
+                <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Products</a></li>
+
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </nav>
+
+<!-- Form Start -->
+
+        <div id="main">
+
+            <!-- Title -->
+                <h1 id="title">EV Survey Form</h1>
+
+             <!-- Description Start -->   
+
+            <p id="description">Thank you for taking the time to help us improve the product</p>
+            </div>
+
+            <!-- main Form Start -->
+
+            <div id="survey-form">
+
+                <Form action="/action_page.php" class="survey">
+                
+                 <!-- Name-label -->
+                    <label for="name-label">Name</label>
+                    <input type="text" id="name-label" name="Name" value="Enter your Name" required>
+<!-- Email-label -->
+                    <label for="email-label">Email</label>
+                    <input type="text" id="email-label" name="Email" placeholder="Enter your Email Address" required>
+
+<!-- Age-label -->
+                    <label for="Age">Age</label>
+                    <input type="text" id="Age" name="Age" placeholder="Enter your Age">
+
+                    <!-- Phone-label -->
+
+                    <label for="number-label">Mobile No</label>
+                    <input type="tel" id="number-label" name="mobile" min="10" max="10" placeholder="91 1234567890" required pattern="[0-9]{2}-[0-9]{10}">
+
+<!-- Drop-down -->
+
+                    <label for="dropdown">Which option best describes your current role?</label>
+
+                    <select id="dropdown" name="dropdown">
+                        <option value="Select Current Role" disabled selected hidden>Select Current Role</option>
+
+      <option value="student">Student</option>
+      <option value="FTJob">Full Time Job</option>
+      <option value="FTLearner">Full Time Learner</option>
+      <option value="Others">Others</option>
+      <option value="PNS">Prefer Not to Say</option>
+    </select>
+
+<!-- Radio button -->
+
+    <label for="recommend">Would you recommend freeCodeCamp to a friend?</label><br>
+    <input type="radio" id="Definitely" name="Definitely" value="Definitely">
+            <label for="Definitely">Definitely</label><br>
+            
+               <input type="radio" id="Maybe" name="Maybe" value="Maybe">
+            <label for="Maybe">Maybe</label><br>
+            
+            <input type="radio" id="notsure" name="notsure" value="notsure">
+            <label for="notsure">Not Sure</label><br><br>
+    
+<!---MESSAGE -->
+            <label for="Message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="6" placeholder="Additional information please mention here"></textarea>
+             <!---Submit button -->
+            <input type="submit" value="submit">
+   
+
+
+
+                </Form>
+
+            </div>
+       
+    </body>
+
+</html>
