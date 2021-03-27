@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Space</title>
+        <title>GreenSpace</title>
         <link rel="stylesheet" href="./css/lp_style.css">
+
+        <!--Link fontawsome -->
+
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/fe2e20c7ac.js" crossorigin="anonymous"></script>
+
+         <!--Link google fonts -->
+
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     </head>
 
+
     <body>
+
+        <!--Navigation Section-->
+
         <header id="header">
             <div id="logo">
                 <img id="header-img" src="./Image/logo.png" alt="Company logo">   
@@ -18,8 +29,8 @@
             </div>
             <nav id="nav-bar">
                 <ul>
-                    <li><a class="nav-link" href="#">Home</a></li>
-                    <li><a class="nav-link" href="#">Activity</a>
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#activity">Activity</a>
                     <ul>
                         <li><a class="nav-link" href="#">Planning</a></li>
                         <li><a class="nav-link" href="#">Implimentation</a></li>
@@ -32,7 +43,7 @@
                     <li><a class="nav-link" href="#">Interiors</a></li>
                     <li><a class="nav-link" href="#">Renovation</a></li>
                 </ul></li>
-                <li><a class="nav-link"  href="#">Pricing</a>
+                <li><a class="nav-link"  href="#pricing">Pricing</a>
                 <ul>
                     <li><a class="nav-link" href="#">Individual plan</a></li>
                     <li><a class="nav-link" href="#">Group plan</a></li>
@@ -40,7 +51,7 @@
                 </ul></li>
                 <li><a class="nav-link" href="#">Blog</a></li>
                 <li><a class="nav-link" href="#">Careers</a></li>
-                <li><a class="nav-link" href="#">Contact us</a></li>
+                <li><a class="nav-link" href="#footer-contact">Contact us</a></li>
                 <form action="" id="search">
                     <input type="text" name="search" placeholder="Search...">
                     <button type="submit">Search</button>
@@ -51,6 +62,131 @@
                 <button type="submit">Login</button>
             </div>
         </header>
+
+        <!-- Home Section -->
+        <div id="home">
+            <div id="text_home">
+                <img src="./Image/ban.jpeg" alt="Banner">
+                <div id="text-block">
+                    <p>Dream for tomorrow <br><br> We help to cherish them</p>
+                    <button id="btn_start" type="submit">Get Started</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="activity">
+            <div id="video-desc">
+                <h4>How to do Muppet Video?</h4>
+            </div>
+           <div id="video">
+            <iframe width="720" height="445" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+           </div>
+           <div id="contact-details">
+               <h3 id="email-text">Greenspace - Handcrafted for every home need</h3>
+               <form action="https://www.freecodecamp.com/email-submit" id="email">
+                   <input type="email" placeholder="Enter your valid Email address" name="email" required>
+               </form>
+           </div>
+        </div>
+        <section id="services"></section>
+        <div id="pricing">
+            <div id="flexbox">
+                <div id="plan">
+                    <h5>Individual Plan</h5>
+                    <i class="fas fa-2x fa-user"></i>
+                    <h6>$799</h6>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <button><a href="#">Signup</a></button>
+                </div>
+                <div id="plan">
+                    <h5>Group Plan</h5>
+                    <i class="fas fa-2x fa-users"></i>
+                    <h6>$799</h6>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <button><a href="#">Signup</a></button>
+                </div>
+                <div id="plan">
+                    <h5>Enterprise Plan</h5>
+                    <i class="far fa-2x fa-building"></i>
+                    <h6>$799</h6>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <button><a href="#">Signup</a></button>
+                </div>
+            </div>
+        </div>
+        <section id="blog"></section>
+        <section id="careers"></section>
+        <section id="contact"></section>
+
+        <!-- Footer -->
+
+        <div id="footer">
+
+            <div id="foot-wrap">
+
+                <div id="footer-content">
+
+                    <div id="about">
+
+                        <img src="./Image/logo.png" alt="COmpany Logo" id="foot-logo">
+                        <h1>Green Space</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus urna id elementum sodales. In quis eros feugiat, porttitor mauris eu, condimentum tortor. Duis at metus sed quam venenatis aliquam. Curabitur sodales quam eu arcu tempus, vitae lacinia purus scelerisque.</p>
+
+                        <div id="social">
+                            <a href="#"><i class="fab fa-lg fa-twitter" style="color: white;"></i></a>
+                            <a href="#"><i class="fab fa-lg  fa-facebook-square" style="color: white;"></i></a>
+                            <a href="#"><i class="fab fa-lg fa-instagram" style="color: white;"></i></a>
+                            <i class="fab fa-lg  fa-youtube" style="color: white;"></i>
+                            <i class="fab fa-lg  fa-google" style="color: white;"></i>
+                            <i class="fab fa-lg  fa-pinterest-p" style="color: white;"></i>
+                            <i class="fab fa-lg  fa-reddit-alien" style="color: white;"></i>
+                            <i class="fab fa-lg fa-github" style="color: white;"></i>
+                            
+                         </div> <!--Footer- social--> 
+
+                    </div> <!--Footer- about--> 
+
+                     <div id="footer-link">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="#home">About us</a></li>
+                            <li><a href="#activity">Activity</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                        </ul>
+                    </div> <!--Footer- link--> 
+                    <div id="footer-contact">
+                        <h2>Contact Us</h2>
+                        <form action="">
+                            <input type="text" placeholder="Name" name="Name"> <br>
+                            <input type="email" placeholder="Enter Email" name=""><br>
+                            <input type="text" placeholder="Type Message" name="Message"><br>
+                            <input type="submit">
+                            
+                            
+                        </form>
+    
+                    </div> <!--Footer- contact-->
+
+                </div>  <!--Footer- content-->
+
+            </div> <!--Foot wrap-->
+
+            <div id="footer-bottom">
+                &copy; Greenspace.com | Designed by UV Creations
+            </div> <!-- Footer-bottom -->
+
+
+        </div> <!--Footer section-->
 
     </body>
 </html>
