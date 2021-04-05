@@ -1,0 +1,102 @@
+
+/* Body Style */
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Navigation bar - Header */
+
+header{
+    position: fixed; /* For Fixed Nav  */
+    top:0;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px cyan;
+    overflow: hidden;
+    display: flex; /* Flex property for nav bar */
+
+}
+
+/* logo */
+header h1{
+    width: 150px;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 20px;
+    color: white;
+}
+/* Main Nav bar */
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex; /* instead of float property */
+    margin-left: 240px;
+    
+}
+header nav ul li{
+    list-style: none;
+}
+.clearfix{
+    clear: both;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    color: white;
+    padding: 10px 40px;
+    margin-top: 13px;
+}
+header nav ul li a:hover{
+    color: cyan;
+}
+
+/* Responsive Nav Bar */
+
+/* Responsive Nav Bar- Nav visible */
+@media (max-width:1200px){
+    header nav ul{
+        margin-left: 120px;
+    }
+
+}
+/* Responsive Nav Bar - Introduction of bars  */
+@media (max-width:768px){
+    
+    #menu-toggle{
+        color:white;
+        float: right;
+        margin-top: 20px;
+        display: block;
+        margin-left: 530px; 
+    }
+    header nav ul{
+       display: none;
+    }
+}
+
+/* Responsive Nav Bar - Introduction of bars  */
+
+@media (max-width:360px){
+    #menu-toggle{
+        color:white;
+        float: right;
+        margin-top: 20px;
+        display: block;
+        margin-left: 100px; 
+    }
+    header nav ul{
+       display: none;
+    }
+}
+
+/* Welcome Section Style */
+
+
